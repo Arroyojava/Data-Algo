@@ -10,7 +10,7 @@ public class reverseInteger {
          */
 
         int number = 1234;
-
+        System.out.println(number);
         System.out.println(reverseInt(number));
 
     }
@@ -25,7 +25,7 @@ public class reverseInteger {
     public static int reverseInt(int num) {
 
         int reversed = 0;
-        int remainder = 0;
+        int remainder;
 
         while (num > 0) {
             remainder = num % 10;

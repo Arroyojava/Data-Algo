@@ -17,9 +17,9 @@ public class Anagram {
 
     }
 
-    public static boolean solve(char[] s1, char[] s2){
+    public static boolean solve(char[] s1, char[] s2) {
 
-        if(s1.length != s2.length) return  false;
+        if (s1.length != s2.length) return false;
 
         // sort the letters of the strings
         //O(n log n) this is the bottleneck of the algorithm
@@ -29,7 +29,7 @@ public class Anagram {
         // consider all the letters one by one
         // compare the letters
         //O(n) overall running time is O(n log n) + O(n) = O(n log n)
-        for(int i = 0; i < s1.length; i++){
+        for (int i = 0; i < s1.length; i++) {
             if (s1[i] != s2[i])
                 return false;
         }
